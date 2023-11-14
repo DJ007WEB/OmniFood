@@ -10,6 +10,8 @@
   padding: 0 4.8rem;
 
   background-color: #fdf2e9;
+
+  position: relative;
 }
 
 .header-logo {
@@ -51,6 +53,29 @@
 .nav-cta:hover,
 .nav-cta:active {
   background-color: #cf711f;
+}
+
+
+/* *************************** */
+/* MOBILE NAVIGATION  */
+/* *************************** */
+
+.btn-mobile-nav {
+  border: none;
+  font-size: 4rem;
+  background-color: transparent;
+  display: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
 }
 
 /* *************************** */
@@ -352,7 +377,7 @@
 }
 
 /* *************************** */
-/* PRICING SECTION PAGE 4 */
+/* PRICING SECTION PAGE 5 */
 /* *************************** */
 
 .section-pricing {
@@ -453,9 +478,6 @@
   line-height: 1.6;
 }
 
-/* *************************** */
-/* PRICING SECTION PAGE 4 */
-/* *************************** */
 
 .section-form {
   padding: 9.6rem 0;
@@ -611,7 +633,8 @@
   line-height: 1.6;
 }
 
-.add-link:link, .add-link:visited {
+.add-link:link,
+.add-link:visited {
   display: block;
 }
 
