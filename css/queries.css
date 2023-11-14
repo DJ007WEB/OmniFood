@@ -78,16 +78,18 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
+    background-color: rgba(255, 255, 255, 0.825);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
-    transition: all 0.5 ease-in;
+    transition: all 0.5s ease-in;
 
     display: flex;
     justify-content: center;
@@ -113,6 +115,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0%);
   }
 
   /* *************************** */
@@ -233,7 +236,6 @@
 }
 
 @media (max-width: 32em) {
-
   /* *************************** */
   /* REUSABLE COMPONENTS */
   /* *************************** */
@@ -265,6 +267,18 @@
   }
 
   /* *************************** */
+  /* HOW OT WORKS SECTION PAGE 2 */
+  /* *************************** */
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  /* *************************** */
   /* FEATURED IN SECTION  */
   /* *************************** */
 
@@ -281,6 +295,14 @@
   }
 
   /* *************************** */
+  /* TESTIMONIAL GALLERY SECTION PAGE 4 */
+  /* *************************** */
+
+  .gallery {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  /* *************************** */
   /* PRICING SECTION PAGE 5 */
   /* *************************** */
 
@@ -290,5 +312,22 @@
 
   .features {
     gap: 4.8rem;
+  }
+
+  /* *************************** */
+  /* FORM SECTION PAGE 6 */
+  /* *************************** */
+
+  .form-cont {
+    grid-template-columns: 1fr;
+  }
+
+  .form-img-part {
+    height: 56rem;
+    grid-row: 1;
+  }
+
+  .form-text-part {
+    padding: 3.2rem;
   }
 }

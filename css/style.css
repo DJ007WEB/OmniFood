@@ -55,7 +55,6 @@
   background-color: #cf711f;
 }
 
-
 /* *************************** */
 /* MOBILE NAVIGATION  */
 /* *************************** */
@@ -76,6 +75,22 @@
 }
 .nav-open .icon-mobile-nav[name="menu-outline"] {
   display: none;
+}
+
+.sticky .header{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.sticky .section-hero {
+  padding-top: 9.6rem;
 }
 
 /* *************************** */
@@ -478,6 +493,9 @@
   line-height: 1.6;
 }
 
+/* *************************** */
+/* FORM SECTION PAGE 6 */
+/* *************************** */
 
 .section-form {
   padding: 9.6rem 0;
